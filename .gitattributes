@@ -1,0 +1,12 @@
+# 默认按文本处理，仓库内存 LF，检出时按平台还原
+* text=auto
+
+# Windows 批处理必须是 CRLF，否则可能无法执行
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# 二进制文件不做换行转换
+*.exe binary
+*.pyz binary
+*.zip binary
+*.xml binary
